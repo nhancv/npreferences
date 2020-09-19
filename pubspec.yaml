@@ -1,8 +1,8 @@
 name: nft_local_storage
 description: A Flutter local storage in nft.
 version: 0.0.1
-author:
-homepage:
+author: Nhan Cao
+homepage: https://github.com/nhancv/nft_local_storage
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
