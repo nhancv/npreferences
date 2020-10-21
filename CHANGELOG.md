@@ -1,3 +1,7 @@
+## [2.0.1] - October 21, 2020.
+
+* Remove unnecessary cast.
+
 ## [2.0.0] - October 21, 2020.
 
 * Fix check value type
