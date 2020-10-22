@@ -13,7 +13,7 @@ class NPreferences {
     final SharedPreferences ref = await preferences;
 
     // Delete if value is null
-    if(value == null) {
+    if (value == null) {
       return ref.remove(key);
     }
 
