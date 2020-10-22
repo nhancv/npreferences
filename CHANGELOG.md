@@ -1,3 +1,7 @@
+## [3.0.0] - October 22, 2020.
+
+* Change to NPreferences.
+
 ## [2.0.2] - October 22, 2020.
 
 * Support clear.

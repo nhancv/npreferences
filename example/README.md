@@ -1,5 +1,5 @@
 ## Integrate
 
 ```
-Provider<LocalStorage>(create: (_) => LocalStorage()),
+Provider<NPreferences>(create: (_) => NPreferences()),
 ```

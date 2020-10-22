@@ -1,33 +1,33 @@
-library nft_local_storage;
+library npreferences;
 
 import 'package:shared_preferences/shared_preferences.dart';
 
 /// This class for local storage using SharedPreferences
-class LocalStorage {
+class NPreferences {
   // Create new Future ref to SharedPreferences instance
-  final Future<SharedPreferences> sharedPrefs = SharedPreferences.getInstance();
+  final Future<SharedPreferences> preferences = SharedPreferences.getInstance();
 
   /// Save data with primary data types: String, List<String>, double, int, bool
   Future<bool> saveData<T>(String key, T value) async {
     // Get SharedPreferences ref
-    final SharedPreferences prefs = await sharedPrefs;
+    final SharedPreferences ref = await preferences;
 
     // Delete if value is null
     if(value == null) {
-      return prefs.remove(key);
+      return ref.remove(key);
     }
 
     // With primary data type, save to local
     if (value is String) {
-      return prefs.setString(key, value);
+      return ref.setString(key, value);
     } else if (value is bool) {
-      return prefs.setBool(key, value);
+      return ref.setBool(key, value);
     } else if (value is int) {
-      return prefs.setInt(key, value);
+      return ref.setInt(key, value);
     } else if (value is double) {
-      return prefs.setDouble(key, value);
+      return ref.setDouble(key, value);
     } else if (value is List<String>) {
-      return prefs.setStringList(key, value);
+      return ref.setStringList(key, value);
     }
     // Default return false
     return false;
@@ -36,16 +36,16 @@ class LocalStorage {
   // Get data by key
   Future<T> getData<T>(String key) async {
     // Get SharedPreferences ref
-    final SharedPreferences prefs = await sharedPrefs;
+    final SharedPreferences ref = await preferences;
     // Get data by key with cast to output data type
-    return prefs.get(key) as T;
+    return ref.get(key) as T;
   }
 
   // Clear all
   Future<bool> clear() async {
     // Get SharedPreferences ref
-    final SharedPreferences prefs = await sharedPrefs;
+    final SharedPreferences ref = await preferences;
     // Clear all data
-    return prefs.clear();
+    return ref.clear();
   }
 }
