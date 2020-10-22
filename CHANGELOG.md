@@ -1,3 +1,7 @@
+## [2.0.2] - October 22, 2020.
+
+* Support clear.
+
 ## [2.0.1] - October 21, 2020.
 
 * Remove unnecessary cast.

@@ -1,6 +1,6 @@
 name: nft_local_storage
 description: A Flutter local storage using SharedPreferences for nft. This lib is created by nhancv.
-version: 2.0.1
+version: 2.0.2
 homepage: https://github.com/nhancv/nft_local_storage
 
 environment:

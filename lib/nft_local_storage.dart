@@ -11,6 +11,12 @@ class LocalStorage {
   Future<bool> saveData<T>(String key, T value) async {
     // Get SharedPreferences ref
     final SharedPreferences prefs = await sharedPrefs;
+
+    // Delete if value is null
+    if(value == null) {
+      return prefs.remove(key);
+    }
+
     // With primary data type, save to local
     if (value is String) {
       return prefs.setString(key, value);
@@ -33,5 +39,13 @@ class LocalStorage {
     final SharedPreferences prefs = await sharedPrefs;
     // Get data by key with cast to output data type
     return prefs.get(key) as T;
+  }
+
+  // Clear all
+  Future<bool> clear() async {
+    // Get SharedPreferences ref
+    final SharedPreferences prefs = await sharedPrefs;
+    // Clear all data
+    return prefs.clear();
   }
 }
