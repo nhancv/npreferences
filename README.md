@@ -1,4 +1,4 @@
-# nft_local_storage
+# npreferences
 
 A Flutter local storage in nft.
 
@@ -6,10 +6,10 @@ A Flutter local storage in nft.
 
 - Import
 ```
-import 'package:nft_local_storage/nft_local_storage.dart';
+import 'package:npreferences/npreferences.dart';
 ```
 
-- Create provider to my app
+- Create a provider to my app
 ```
-Provider<LocalStorage>(create: (_) => LocalStorage()),
+Provider<NPreferences>(create: (_) => NPreferences()),
 ```

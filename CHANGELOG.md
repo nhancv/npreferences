@@ -1,3 +1,7 @@
+## [3.0.0+1] - October 22, 2020.
+
+* Update readme.
+
 ## [3.0.0] - October 22, 2020.
 
 * Change to NPreferences.
