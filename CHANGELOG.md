@@ -1,3 +1,7 @@
+## [4.0.0] - June 8, 2021.
+
+* Flutter 2
+
 ## [3.0.0+1] - October 22, 2020.
 
 * Update readme.
