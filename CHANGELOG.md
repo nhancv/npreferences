@@ -1,3 +1,7 @@
+## [5.0.0] - August 29, 2022.
+
+* Null-safety
+
 ## [4.0.0] - June 8, 2021.
 
 * Flutter 2
